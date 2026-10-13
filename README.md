@@ -1,0 +1,12 @@
+# Forge CLI
+
+CLI local para SHA-256 e resumo de JSON. Sem rede, sem credenciais.
+
+```bash
+python -m venv .venv
+.venv/Scripts/activate
+pip install -e ".[dev]"
+forge-cli hash examples/sample.json
+forge-cli json examples/sample.json
+pytest -q
+```
